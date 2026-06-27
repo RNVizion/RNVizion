@@ -1,6 +1,6 @@
 # Hey, I’m Christian Smith (RNVizion) ⚡
 
-I build polished desktop tools with Python and PyQt6, and lately production AI systems on top of large language models — things that actually feel good to use.
+I build production AI systems on the Claude API — RAG, LLM agents, and a published MCP server — plus polished developer tools that actually feel good to use.
 By day I work in AR/XR sales and support at Meta. Outside of that I’m a game developer, creative technologist, writer, and relentless tinkerer.
 
 I care about the gap between software that *works* and software that *feels right* — clean architecture, thoughtful UX, and the kind of engineering notes that explain *why*, not just *what*. Lately I write about keeping that same care when AI lets you build ten times faster, over at [rnvizion.dev](https://rnvizion.dev).
@@ -57,7 +57,7 @@ A suite of five professional desktop applications built with PyQt6. Each ships w
 - 🎓 BS in Game Programming and Development — Southern New Hampshire University
 - 🥽 AR/XR Sales & Technical Support — Meta
 - ✍️ Content Developer — built training materials, scripts, and educational media at Vitalyst
-- 🧭 Exploring Developer Advocate, Solutions Engineer, and AI Solutions Architect roles — where building, communicating, and supporting developers all matter
+- 🧭 Exploring remote AI Engineer, Solutions Engineer, and Developer Advocate roles — where building, communicating, and shipping production systems all matter
 
 -----
 
