@@ -1,6 +1,6 @@
 # Hey, I’m Christian Smith (RNVizion) ⚡
 
-I build production AI systems on the Claude API — RAG, LLM agents, and a published MCP server — plus polished developer tools that actually feel good to use.
+I build production AI systems on the Claude API — RAG, LLM agents, a published MCP server, and an open identity standard — plus polished developer tools that actually feel good to use.
 By day I work in AR/XR sales and support at Meta. Outside of that I’m a game developer, creative technologist, writer, and relentless tinkerer.
 
 I care about the gap between software that *works* and software that *feels right* — clean architecture, thoughtful UX, and the kind of engineering notes that explain *why*, not just *what*. Lately I write about keeping that same care when AI lets you build ten times faster, over at [rnvizion.dev](https://rnvizion.dev).
@@ -13,6 +13,7 @@ Building on top of large language models: grounded, guardrailed, and determinist
 
 |Project                                                                          |Description                                                                                                                                          |
 |---------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|
+|[**AIII — AI Identification Initiative**](https://rnvizion.dev/aiii)              |Open proposal & Apache-2.0 reference implementation ([rnv-mcp-identity](https://github.com/RNVizion/rnv-mcp-identity)) for AI agent identity — an L1–L3 identity-and-authorization layer for MCP servers; resolves or refuses, never guesses. 46 tests, property-based eval gates, runnable FastMCP demo|
 |[**Ask the Corpus**](https://huggingface.co/spaces/RNVizion/ask-the-corpus)      |Retrieval-augmented (RAG) assistant over my published writing — sentence-transformers + ChromaDB, grounded through Claude with citations, rate-limited and cost-guarded. Live on Hugging Face|
 |**MCP Publishing Agent**                                                         |FastMCP server with a Claude agent loop that automates a content-publishing workflow — validates a post’s metadata, generates its card, and refuses to publish anything that fails validation|
 |[**rnv-color-mcp**](https://github.com/RNVizion/rnv-color-mcp)                    |Color-computation server on the Model Context Protocol, published to the official MCP registry. Nine deterministic tools (conversion, harmony, mixing, WCAG contrast, CIEDE2000); the model decides intent, the tool owns the exact value — resolves or refuses, never guesses|
