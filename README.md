@@ -1,6 +1,6 @@
 # Hey, I’m Christian Smith (RNVizion) ⚡
 
-I build production AI systems on the Claude API — RAG, LLM agents, a published MCP server, and an open identity standard — plus polished developer tools that actually feel good to use.
+I build production AI systems on the Claude API — RAG, LLM agents, a published MCP server, and an Apache-2.0 agent-identity layer — plus polished developer tools that actually feel good to use.
 By day I work in AR/XR sales and support at Meta. Outside of that I’m a game developer, creative technologist, writer, and relentless tinkerer.
 
 I care about the gap between software that *works* and software that *feels right* — clean architecture, thoughtful UX, and the kind of engineering notes that explain *why*, not just *what*. Lately I write about keeping that same care when AI lets you build ten times faster, over at [rnvizion.dev](https://rnvizion.dev).
@@ -13,10 +13,10 @@ Building on top of large language models: grounded, guardrailed, and determinist
 
 |Project                                                                          |Description                                                                                                                                          |
 |---------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|
-|[**AIII — AI Identification Initiative**](https://rnvizion.dev/aiii)              |Open proposal & Apache-2.0 reference implementation ([rnv-mcp-identity](https://github.com/RNVizion/rnv-mcp-identity)) for AI agent identity — an L1–L3 identity-and-authorization layer for MCP servers; resolves or refuses, never guesses. 46 tests, property-based eval gates, runnable FastMCP demo|
-|[**Ask the Corpus**](https://huggingface.co/spaces/RNVizion/ask-the-corpus)      |Retrieval-augmented (RAG) assistant over my published writing — sentence-transformers + ChromaDB, grounded through Claude with citations, rate-limited and cost-guarded. Live on Hugging Face|
-|**MCP Publishing Agent**                                                         |FastMCP server with a Claude agent loop that automates a content-publishing workflow — validates a post’s metadata, generates its card, and refuses to publish anything that fails validation|
-|[**rnv-color-mcp**](https://github.com/RNVizion/rnv-color-mcp)                    |Color-computation server on the Model Context Protocol, published to the official MCP registry. Nine deterministic tools (conversion, harmony, mixing, WCAG contrast, CIEDE2000); the model decides intent, the tool owns the exact value — resolves or refuses, never guesses|
+|[**AIII — AI Identification Initiative**](https://rnvizion.dev/aiii)              |Apache-2.0 reference implementation ([rnv-mcp-identity](https://github.com/RNVizion/rnv-mcp-identity)) for AI agent identity — an L1–L3 identity-and-authorization layer for MCP servers; resolves or refuses, never guesses. 46 tests, property-based eval gates, runnable FastMCP demo. Sigstore-signed releases, CycloneDX SBOM, OpenSSF Baseline at 20 of 21 controls|
+|[**Ask the Corpus**](https://huggingface.co/spaces/RNVizion/ask-the-corpus)      |Retrieval-augmented (RAG) assistant over my published writing — sentence-transformers + ChromaDB, grounded through Claude with citations, rate-limited and cost-guarded. Refusal is enforced, not hoped for: a CI eval suite fails the build if retrieval slips, if it stops refusing what it can’t answer, or if it starts refusing what it can. Live on Hugging Face|
+|[**RNV Publishing Agent**](https://github.com/RNVizion/rnv-publishing-agent)      |FastMCP server with a Claude agent loop that automates a content-publishing workflow — validates a post’s metadata, generates its card and OG image, commits and pushes, then updates the corpus behind Ask the Corpus. Refuses to publish anything that fails validation|
+|[**rnv-color-mcp**](https://github.com/RNVizion/rnv-color-mcp)                    |Color-computation server on the Model Context Protocol, published to the official MCP registry and listed in awesome-mcp-servers. Nine deterministic tools (conversion, harmony, mixing, WCAG contrast, CIEDE2000); the model decides intent, the tool owns the exact value — resolves or refuses, never guesses. Also an OAuth 2.1 resource server: RFC 9728 protected-resource metadata, enforced per-tool scopes|
 
 -----
 
@@ -42,14 +42,17 @@ A suite of five professional desktop applications built with PyQt6. Each ships w
 **AI / ML**
 `Claude API` · `RAG` · `ChromaDB` · `sentence-transformers` · `MCP / FastMCP` · `Gradio` · `Hugging Face`
 
+**Security & Identity**
+`OAuth 2.1` · `RFC 9728` · `holder-of-key (RFC 7800/7638)` · `per-tool scopes`
+
 **Frameworks & Tools**
-`PyQt6` · `Unity` · `Unreal Engine` · `Git` · `GitHub Actions`
+`PyQt6` · `Unity` · `Unreal Engine` · `Git` · `GitHub Actions` · `Docker`
 
 **Creative & 3D**
 `zBrush` · `3DS Max` · `Substance Painter` · `Adobe Creative Suite`
 
 **Testing**
-`pytest` · `pytest-qt` · `hypothesis` · `syrupy` · `coverage.py`
+`pytest` · `pytest-qt` · `hypothesis` · `syrupy` · `coverage.py` · `CI-gated LLM evals`
 
 -----
 
