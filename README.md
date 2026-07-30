@@ -68,7 +68,7 @@ A suite of five professional desktop applications built with PyQt6. Each ships w
 ## 📫 Let’s Connect
 
 [![Website](https://img.shields.io/badge/Website-rnvizion.dev-d2bc93?logo=firefox&logoColor=white)](https://rnvizion.dev)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Christian%20Smith-0A66C2?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/christian-smith-40b957161/)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Christian%20Smith-0A66C2?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/rnvizion/)
 
 -----
 
